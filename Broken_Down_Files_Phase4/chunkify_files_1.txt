@@ -1,0 +1,18 @@
+with open(sys.argv[1]) as f:  
+	count = 0
+	
+	control = f.read().split('\n\n') 
+	shuffle(control)
+	for i in range(0,len(control),20):
+		count += 1
+		outfile1 = '../Chunked_files/' + filename + '_' + str(count) +'.txt'
+		with open(outfile1, "w") as f:
+			f.write('\n\n'.join(control[i:i+20]))
+
+import os.path 
+import sys
+from random import shuffle
+
+print(os.path.splitext(sys.argv[1]))
+filename = os.path.splitext(sys.argv[1])[0] 
+print(filename)
