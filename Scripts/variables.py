@@ -1,6 +1,6 @@
 aws_access_key=''
 aws_secret_key=''
-PROD = True
+PROD = False
 
 if PROD:
 	host='mechanicalturk.amazonaws.com' 

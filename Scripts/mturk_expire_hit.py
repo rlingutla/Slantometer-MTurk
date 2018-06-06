@@ -17,7 +17,7 @@ aws_secret_access_key=aws_secret_key,
 host=host)
 
 #Enter HIT IDs into the following list
-ids=[]
+ids=["329E6HTMSWXS62LHSRDAIKNNL3KK3C"]
 
 for i in ids:
 	try:

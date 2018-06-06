@@ -20,8 +20,11 @@ if __name__ == '__main__':
 	tested_file_names = []
 	with open(infile_one) as f:
 		lines = f.read().splitlines()
-		for l in lines:
-			tested_file_names.append(l[1:-1])
+		for l in lines: 
+			if l[-1] == '"':
+				tested_file_names.append(l[1:-1])
+			else:
+				tested_file_names.append(l)
 
 	with open(infile_two) as f:
 		additional_lines = f.read().splitlines()

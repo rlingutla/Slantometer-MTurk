@@ -3,26 +3,26 @@ THE SKY IS BLUE ,
 OCTUPUS HAVE 8 LEGS ,
 PSYCHOLOGY IS INTERESTING,
 THE INDUSTRIAL REVOLUTION BEGAN IN THE 1800s,
-"IN FACT, WE ARE TWO BLOCKS FROM THE FINISH LINE.",Green
-"<div style=""position:absolute;top:0px;"" class=0>",Green
+"IN FACT, WE ARE TWO BLOCKS FROM THE FINISH LINE.",Yellow
+"<div style=""position:absolute;top:0px;"" class=0>",Yellow
 "OVERSEAS VETERANS OF THE WARS THE PAST TEN YEARS AND THOSE OF US WHO SPENT TIME THERE, NUMBER ONE, THE PRIMARY EXPLOSION, THEN THE SECONDARY EXPLOSION AS PEOPLE ARE RUNNING TO THE FIRST.",Yellow
 "<div style=""position:absolute;top:0px;"" class=""hideMe 1"">",Yellow
-YEAH.,Yellow
+YEAH.,Green
 "<div style=""position:absolute;top:0px;"" class=""hideMe 2"">",Green
 "THEY CAN LOOK FOR THE SOFTEST, LEAST DEFENDED AREA.",Green
 "<div style=""position:absolute;top:0px;"" class=""hideMe 3"">",Yellow
-FOR A 15-BLOCK AREA PEOPLE AREN'T ALLOWED.,Green
-"<div style=""position:absolute;top:0px;"" class=""hideMe 4"">",Green
+FOR A 15-BLOCK AREA PEOPLE AREN'T ALLOWED.,Yellow
+"<div style=""position:absolute;top:0px;"" class=""hideMe 4"">",Yellow
 THE SIGN OF A TERRORIST ORGANIZATION THAT'S TRYING TO KILL PEOPLE.,Green
 "<div style=""position:absolute;top:0px;"" class=""hideMe 5"">",Yellow
 IT'S THE LAST THING YOU EXPECT AT THE FINISH LINE OF THE BOSTON MARATHON ON PATRIOTS DAY IN BOSTON.,Green
 "<div style=""position:absolute;top:0px;"" class=""hideMe 6"">",Green
 THIS IS THE SCENE AS IT HAPPENED.,Yellow
-"<div style=""position:absolute;top:0px;"" class=""hideMe 7"">",Green
+"<div style=""position:absolute;top:0px;"" class=""hideMe 7"">",Yellow
 IT FELT SO STRONG IT ALMOST BLEW MY HAT OFF.,Yellow
 "<div style=""position:absolute;top:0px;"" class=""hideMe 8"">",Yellow
 "THEIR ULTIMATE GOAL, THE UNTHINKABLE.",Green
-"<div style=""position:absolute;top:0px;"" class=""hideMe 9"">",Yellow
+"<div style=""position:absolute;top:0px;"" class=""hideMe 9"">",Green
 AMBULANCES TOOK 19 VICTIMS TO MASSACHUSETTS GENERAL HOSPITAL.,
 "<div style=""position:absolute;top:0px;"" class=""hideMe 10"">",
 IT IS RIGHT NOW PRETTY DEAD.,

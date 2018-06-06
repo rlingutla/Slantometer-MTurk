@@ -18,71 +18,72 @@ host=host)
 def demographics(people_data):
 	checked_workers = [] 
 	states = {
-        'AK': 'Alaska',
-        'AL': 'Alabama',
-        'AR': 'Arkansas',
-        'AS': 'American Samoa',
-        'AZ': 'Arizona',
-        'CA': 'California',
-        'CO': 'Colorado',
-        'CT': 'Connecticut',
-        'DC': 'District of Columbia',
-        'DE': 'Delaware',
-        'FL': 'Florida',
-        'GA': 'Georgia',
-        'GU': 'Guam',
-        'HI': 'Hawaii',
-        'IA': 'Iowa',
-        'ID': 'Idaho',
-        'IL': 'Illinois',
-        'IN': 'Indiana',
-        'KS': 'Kansas',
-        'KY': 'Kentucky',
-        'LA': 'Louisiana',
-        'MA': 'Massachusetts',
-        'MD': 'Maryland',
-        'ME': 'Maine',
-        'MI': 'Michigan',
-        'MN': 'Minnesota',
-        'MO': 'Missouri',
-        'MP': 'Northern Mariana Islands',
-        'MS': 'Mississippi',
-        'MT': 'Montana',
-        'NA': 'National',
-        'NC': 'North Carolina',
-        'ND': 'North Dakota',
-        'NE': 'Nebraska',
-        'NH': 'New Hampshire',
-        'NJ': 'New Jersey',
-        'NM': 'New Mexico',
-        'NV': 'Nevada',
-        'NY': 'New York',
-        'OH': 'Ohio',
-        'OK': 'Oklahoma',
-        'OR': 'Oregon',
-        'PA': 'Pennsylvania',
-        'PR': 'Puerto Rico',
-        'RI': 'Rhode Island',
-        'SC': 'South Carolina',
-        'SD': 'South Dakota',
-        'TN': 'Tennessee',
-        'TX': 'Texas',
-        'UT': 'Utah',
-        'VA': 'Virginia',
-        'VI': 'Virgin Islands',
-        'VT': 'Vermont',
-        'WA': 'Washington',
-        'WI': 'Wisconsin',
-        'WV': 'West Virginia',
-        'WY': 'Wyoming'
+        "'AK'": 'Alaska',
+        "'AL'": 'Alabama',
+        "'AR'": 'Arkansas',
+        "'AS'": 'American Samoa',
+        "'AZ'": 'Arizona',
+        "'CA'": 'California',
+        "'CO'": 'Colorado',
+        "'CT'": 'Connecticut',
+        "'DC'": 'District of Columbia',
+        "'DE'": 'Delaware',
+        "'FL'": 'Florida',
+        "'GA'": 'Georgia',
+        "'GU'": 'Guam',
+        "'HI'": 'Hawaii',
+        "'IA'": 'Iowa',
+        "'ID'": 'Idaho',
+        "'IL'": 'Illinois',
+        "'IN'": 'Indiana',
+        "'KS'": 'Kansas',
+        "'KY'": 'Kentucky',
+        "'LA'": 'Louisiana',
+        "'MA'": 'Massachusetts',
+        "'MD'": 'Maryland',
+        "'ME'": 'Maine',
+        "'MI'": 'Michigan',
+        "'MN'": 'Minnesota',
+        "'MO'": 'Missouri',
+        "'MP'": 'Northern Mariana Islands',
+        "'MS'": 'Mississippi',
+        "'MT'": 'Montana',
+        "'NA'": 'National',
+        "'NC'": 'North Carolina',
+        "'ND'": 'North Dakota',
+        "'NE'": 'Nebraska',
+        "'NH'": 'New Hampshire',
+        "'NJ'": 'New Jersey',
+        "'NM'": 'New Mexico',
+        "'NV'": 'Nevada',
+        "'NY'": 'New York',
+        "'OH'": 'Ohio',
+        "'OK'": 'Oklahoma',
+        "'OR'": 'Oregon',
+        "'PA'": 'Pennsylvania',
+        "'PR'": 'Puerto Rico',
+        "'RI'": 'Rhode Island',
+        "'SC'": 'South Carolina',
+        "'SD'": 'South Dakota',
+        "'TN'": 'Tennessee',
+        "'TX'": 'Texas',
+        "'UT'": 'Utah',
+        "'VA'": 'Virginia',
+        "'VI'": 'Virgin Islands',
+        "'VT'": 'Vermont',
+        "'WA'": 'Washington',
+        "'WI'": 'Wisconsin',
+        "'WV'": 'West Virginia',
+        "'WY'": 'Wyoming', 
+        "'default'": 'No response'
 	}
-	gender = {'male':0,'female':0,'Other':0}
-	age = {'<20':0, '20-30':0,'31-40':0,'41-50':0,'51-60':0,'61-70':0,'71+':0}
+	gender = {"'male'":0,"'female'":0,"'Other'":0}
+	age = {"'<20'":0, "'20-30'":0,"'31-40'":0,"'41-50'":0,"'51-60'":0,"'61-70'":0,"'71+'":0}
 	state = dict()
-	education = {'default':0,'Master': 0,'High School Diploma or Equivalent': 0,'Bachelor': 0, 'Doctoral Degree': 0, 'Associate':0}
-	political_party = {'Democratic':0,'republican':0,'green':0,'Libertarian':0,'Constitution':0,'Independent':0}
-	voter_status = {'yes':0, 'no':0}
-	news_viewed_days = {'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0}
+	education = {"'default'":0,"'Master'": 0,"'High School Diploma or Equivalent'": 0,"'Bachelor'": 0, "'Doctoral Degree'": 0, "'Associate'":0}
+	political_party = {"'Democratic'":0,"'republican'":0,"'green'":0,"'Libertarian'":0,"'Constitution'":0,"'Independent'":0}
+	voter_status = {"'yes'":0, "'no'":0}
+	news_viewed_days = {"'0'":0,"'1'":0,"'2'":0,"'3'":0,"'4'":0,"'5'":0,"'6'":0,"'7'":0}
 	for datum in people_data:
 		if datum[0] in checked_workers:
 			continue
@@ -107,13 +108,12 @@ def demographics(people_data):
 	with open('../data/gender.csv', 'w') as csv_file:
 	    writer = csv.writer(csv_file)
 	    for key, value in gender.items():
-	       writer.writerow([key, value])
+	       writer.writerow([key.strip(), value])
 	with open('../data/age.csv', 'w') as csv_file:
 	    writer = csv.writer(csv_file)
 	    for key, value in age.items():
-	       writer.writerow([key, value])
+	       writer.writerow([key.strip(), value])
 	with open('../data/state.csv', 'w') as csv_file:
-		print(state)
 		writer = csv.writer(csv_file)
 		sorted_x = sorted(state.items(), key=itemgetter(1))
 		sorted_x.reverse()
@@ -151,7 +151,7 @@ def sort_calculate(responses, letter):
 	green_2017 = [0,0,0]
 	yellow_2017 = [0,0,0]
 
-	for key in responses.keys():
+	for key in responses.keys(): 
 		green_tally = 0
 		yellow_tally = 0
 		labels = []
@@ -181,10 +181,11 @@ def sort_calculate(responses, letter):
 				labels.append('Yellow')
 
 		split_key = key.split('_')
+
 		if key[0] == '"':
 			name = key[1:]
 		else:
-			name = key
+			name = key 
 		try:
 			with open('../Tested_Broken_Files_Phase5/' + name, "r") as f:
 				lines = f.read().splitlines()
@@ -206,7 +207,7 @@ def sort_calculate(responses, letter):
 			       writer.writerow(item)
 
 		except:
-			continue
+			pass
 
 		if '2013' in split_key:
 			if '"ABC' in split_key or 'ABC' in split_key:
@@ -276,8 +277,7 @@ def sort_calculate(responses, letter):
 		print('ABC 2013 - Green Reporting: ' + str("{0:.0f}".format(green_2013[0]/(green_2013[0]+yellow_2013[0])*100)) + '%', ' ABC 2017 - Green Reporting: ' + str("{0:.0f}".format(green_2017[0]/(green_2017[0]+yellow_2017[0])*100)) + '%')
 		print('FOX 2013 - Green Reporting: ' + str("{0:.0f}".format(green_2013[1]/(green_2013[1]+yellow_2013[1])*100)) + '%', ' FOX 2013 - Green Reporting: ' + str("{0:.0f}".format(green_2017[1]/(green_2017[1]+yellow_2017[1])*100)) + '%')
 		print('NBC 2013 - Green Reporting: ' + str("{0:.0f}".format(green_2013[2]/(green_2013[2]+yellow_2013[2])*100)) + '%', ' NBC 2013 - Green Reporting: ' + str("{0:.0f}".format(green_2017[2]/(green_2017[2]+yellow_2017[2])*100)) + '%')
-
-    """Uncomment the following line to write sorted data to csv files."""
+	"""Uncomment the following line to write sorted data to csv files."""
 	#write_to_csv(channel_date,letter) 
 
 """This function writes data for each channel and date point into files sorted by event.
@@ -345,7 +345,7 @@ def write_to_csv(channel_date,letter):
 	'NBC':30.0
 	}
 
-	"""The percentage of time an event was covered on a particular date and channel"""
+	"""The percentage of time an event was covered on a particular date and channel"""	
 	transcript_breakdown = []
 	with open('reporting_percentage.csv', 'r') as f:
 		transcript_breakdown = f.readlines()
@@ -373,7 +373,6 @@ def write_to_csv(channel_date,letter):
 			total = channel_date[point][0] + channel_date[point][1]
 			green_percent = (channel_date[point][0]/total) * minutes
 			yellow_percent = (channel_date[point][1]/total) * minutes
-			
 			f.write(str('{0:.1f}'.format(green_percent)) + ',' + str('{0:.1f}'.format(yellow_percent)) + ',' + str('{0:.1f}'.format(minutes)) + ',' + str(split_name[1]) +'-'+ str(split_name[2]) +'-'+ str(split_name[3]))
 			f.write('\n')
 	print('Done writing data to file')
@@ -539,13 +538,14 @@ if __name__ == '__main__':
 	    				data.append(r[i].strip())
 	    			responses_MS_PhD[date] = [data]
 
-    """Comment out the demographics you do not want to calculate """
+    """Comment out the demographics you do not want to calculate """ 
+    #print(responses.keys())
     sort_calculate(responses, None) 
-    # sort_calculate(responses_d, 'd')
-    # sort_calculate(responses_r, 'r')
-    # sort_calculate(responses_o, 'o')
-	# sort_calculate(responses_HS, 'h')
-	# sort_calculate(responses_AS_BS, 'ab')
-	# sort_calculate(responses_MS_PhD, 'mp')
-	# demographics(people_data)
+    sort_calculate(responses_d, 'd')
+    sort_calculate(responses_r, 'r')
+    sort_calculate(responses_o, 'o')
+    sort_calculate(responses_HS, 'h')
+    sort_calculate(responses_AS_BS, 'ab')
+    sort_calculate(responses_MS_PhD, 'mp')
+    #demographics(people_data)
 	# workers(worker_ids) 

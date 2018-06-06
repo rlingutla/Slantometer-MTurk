@@ -5,18 +5,18 @@ PSYCHOLOGY IS INTERESTING,
 THE INDUSTRIAL REVOLUTION BEGAN IN THE 1800s,
 THERE IS SOME LARGE DEBRIS IN THE AIR RIGHT HERE.,Green
 "<div style=""position:absolute;top:0px;"" class=0>",Green
-"YOU FOLKS IN RURAL AREAS UP THERE, THIS IS A LIFE THREATENING, DAMAGING TORNADO HERE.",Green
+"YOU FOLKS IN RURAL AREAS UP THERE, THIS IS A LIFE THREATENING, DAMAGING TORNADO HERE.",Yellow
 "<div style=""position:absolute;top:0px;"" class=""hideMe 1"">",Yellow
-WE ALREADY HAD REPORTS OF SOFTBALL-SIZED HAIL.,Yellow
-"<div style=""position:absolute;top:0px;"" class=""hideMe 2"">",Green
+WE ALREADY HAD REPORTS OF SOFTBALL-SIZED HAIL.,Green
+"<div style=""position:absolute;top:0px;"" class=""hideMe 2"">",Yellow
 HERE HAD COMES.,Yellow
 "<div style=""position:absolute;top:0px;"" class=""hideMe 3"">",Green
 THIS HAS BEEN A TOPSY-TURVY WEEKEND FOR A LOT OF PEOPLE IN THE COUNTRY'S MIDSECTION AND THIS DANGEROUS WEATHER SYSTEM IS ON THE MOVE.,Green
 "<div style=""position:absolute;top:0px;"" class=""hideMe 4"">",Yellow
 ACTIVE TORNADO WARNINGS.,Yellow
-"<div style=""position:absolute;top:0px;"" class=""hideMe 5"">",Green
+"<div style=""position:absolute;top:0px;"" class=""hideMe 5"">",Yellow
 WE CAN HEAR THE ROAR.,Green
-"<div style=""position:absolute;top:0px;"" class=""hideMe 6"">",Yellow
+"<div style=""position:absolute;top:0px;"" class=""hideMe 6"">",Green
 TONIGHT WHY CLOSE TO HALF THE U.S. POPULATION COULD BE AT RISK FROM DANGEROUS STORMS BEFORE IT IS OVER.,Green
 "<div style=""position:absolute;top:0px;"" class=""hideMe 7"">",Green
 A TORNADO ALSO TOUCHED DOWN IN WICHITA TONIGHT BUT NO REPORTS OF INJURIES.,Green
